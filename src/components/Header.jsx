@@ -5,40 +5,47 @@ import A from "./A";
 export default function Header() {
 
     const [isOpen, setIsOpen] = useState(false);
-    function handleNavRight() {
+    function handleRightNav() {
         setIsOpen(!isOpen);
     }
     return (
-        <header className="bg-[#014e56]">
-            <div className={`_header-wrapper sm:max-w-[1240px] sm:m-auto flex justify-between text-white  items-center py-10 px-8 bg-[#014e56]`}>
-
-                <span className="_logo font-bold text-3xl">myTeam</span>
-                <span className="_ bar-button text-3xl sm:hidden md:w-[1240px] hover:cursor-pointer" onClick={handleNavRight}>&#9776;</span>
-                <nav className="hidden sm:flex items-center justify-between flex-grow px-8">
-                    <div className="flex items-center">
-                        <A className="px-5" to="/" label="home" />
-                        <A to="about" label="about" />
+        <header className="bg-[#014e56] text-white">
+            <div className={`grid grid-cols-[25px_1fr_25px] sm:grid-cols-[max-content_1fr_max-content] sm:px-4 sm:max-w-[1110px] sm:gap-5 sm:m-auto h-28 sm:h-[194px] items-center`}>
+                <div className="col-start-2 col-end-3 sm:col-start-1 sm:col-end-2">
+                    <div className="grid grid-cols-2 items-center  sm:grid-cols-1">
+                        <span className="text-2xl sm:text-3xl font-[700]">myteam</span>
+                        <span onClick={handleRightNav} className=" justify-self-end sm:hidden">&#9776;</span>
                     </div>
-                    <A to="contact" label="Contact us" fat={true} />
-                </nav>
-                <nav className={`w-full h-full z-10 absolute left-0 ${isOpen ? '' : 'hidden'} top-0 backdrop-blur`}>
-                    <div
-                        style={{
-                            backgroundImage: `url(${img})`,
-                            backgroundPosition: '150px 95%',
-                        }}
-                        className={`bg-[#2c636a] font-bold w-[250px] h-full absolute right-0 flex flex-col p-8 pt-24 bg-no-repeat `} >
-
-                        <A handleNavRight={handleNavRight} className="mt-4" to="/" label="Home" />
-                        <A handleNavRight={handleNavRight} className="mt-4" to="about" label="About" />
-                        <A handleNavRight={handleNavRight} className="mt-24" to="contact" label="Contact us" fat={true} />
-                        <span className={`absolute top-8 hover:cursor-pointer right-8 p-3 rounded hover:bg-red-400`} onClick={handleNavRight} >
-                            &#10008;
-                        </span>
-                    </div>
-                </nav>
+                </div>
+                <div className="hidden sm:col-start-2 sm:col-end-3 sm:block">
+                    <A className="" to="/" label="home" />
+                    <A to="about" label="about" />
+                </div>
+                <div className="hidden sm:col-start-3 sm:col-end-4 sm:block" >
+                    <A to="contact" label="contact us" fat={true} />
+                </div>
             </div >
-        </header>
+            <div
+                style={{
+                    backgroundImage: `url(${img})`
+                }}
+                className={`_right_nav_bar bg-[bottom_10px_right_-100px] bg-no-repeat grid 
+                                    grid-cols-[48px_1fr_35px] bg-[#014e56] grid-rows-[128px_200px_160px]
+                                transition-all duration-300 absolute h-full top-0    
+                                ${isOpen ? 'translate-x-0 shadow-[-180px_0px_250px_180px_rgba(0,0,0,0.5)]' : 'hidden translate-x-full'}
+                                    w-[250px] absolute right-0 h-full`} >
+                <div className="row-start-2 row-end-3 col-start-2 col-end-3">
+                    <A handleNavRight={handleRightNav} className="" to="/" label="Home" />
+                    <A handleNavRight={handleRightNav} className="" to="about" label="About" />
+                </div>
+                <div className="row-start-3 row-end-4 col-start-2 col-end-3" >
+                    <A handleNavRight={handleRightNav} to="contact" label="contact us" fat={true} />
+                </div>
+                <span onClick={handleRightNav} className={`col-start-3 cursor-pointer flex items-center text-white hover:text-[#f67e7f]`}  >
+                    &#10008;
+                </span>
+            </div>
+        </header >
     )
 }
 
