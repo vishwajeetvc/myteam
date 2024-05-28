@@ -9,8 +9,8 @@ export default function A({ handleNavRight, className, to, label, fat = false })
             ${(!isActive) ? 'text-white' : ''} 
             ${(isActive && !fat) ? 'text-[#f67e7f]' : 'text-black'} 
             ${(fat && isActive) ? 'scale-110 bg-white' : ''}
-            ${fat ? `px-6 py-2  rounded-full border-2 border-white  hover:bg-white hover:text-black hover:scale-110 text-center`
-                        : ''} ${className}`
+            ${fat ? `px-6 py-2  rounded-full border-2 border-white  hover:bg-white hover:text-black hover:scale-110 text-center` : ''} 
+            ${className}`
             }}
             to={to} > {label}
         </NavLink >

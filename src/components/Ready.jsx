@@ -7,16 +7,14 @@ export default function Ready() {
             backgroundImage: `url(${img})`,
             backgroundPosition: '0% bottom'
         }}
-        className='bg-no-repeat grid grid-rows-[100px_max-content_100px] bg-orange-400'>
+        className='bg-no-repeat py-16 bg-[#f67e7f] px-4'>
 
-        <div className='row-start-2 row-end-3 grid grid-cols-[25px_1fr_25px] bg-blue-700'>
-            <div className='col-start-2 col-end-3 grid  grid-rows-[max-content_max-content] justify-center gap-5 bg-red-700'>
-                <div className='text-3xl font-[700] text-center md:text-left '>Ready to get started?</div>
-                <div className='justify-self-center'>
-                    <A to="contact" label="contact us" fat={true}
-                        className={`text-[black] border-[black]`}
-                    />
-                </div>
+        <div className='grid gap-5 justify-center md:grid-cols-2 md:max-w-[1110px] m-auto'>
+            <div className=' text-center md:text-left text-3xl text-[#022f33] md:text-4xl font-[700] my-4'>Ready to get started?</div>
+            <div className='md:justify-self-end  justify-self-center'>
+                <A to="contact" label="contact us" fat={true}
+                    className={`text-[#022e33] border-[#022e33] hover:bg-[#022e33] hover:text-white `}
+                />
             </div>
         </div>
 
