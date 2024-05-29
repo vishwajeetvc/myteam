@@ -30,7 +30,7 @@ export default function Section1() {
             style={{
                 backgroundImage: `url(${img4})`
             }}
-            className='section1 bg-[#022f34] bg-no-repeat bg-[120%_0] md:bg-[107%_100%]'>
+            className='section1 bg-[#022f34] bg-no-repeat bg-[80vw_0] md:bg-[107%_100%]'>
             <div className="text-white grid grid-cols-[24px_1fr_24px] md:grid-cols-[1fr_auto_1fr] box-border max-w-[1110px] md:m-auto">
 
                 <div className="col-start-2 col-end-3  grid grid-cols-9 md:gap-x-5 grid-rows-[100px_max-content_max-content_120px] px-1 ">

@@ -7,7 +7,7 @@ export default function Footer() {
                 <div className="row-start-1 row-end-2 >> md:col-start-1 md:col-end-2 ">
                     <p className="text-2xl font-[700] >> ">myteam</p>
                     <A className="" to="/" label="home" />
-                    <A to="about" label="about" />
+                    <A to="about" label="/about" />
                 </div>
                 <div className="row-start-2 row-end-3 text-[#93abad] >> md:row-start-1  md:col-start-2 md:col-end-3 md:text-left">
                     <p className="">
