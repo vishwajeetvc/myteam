@@ -4,7 +4,6 @@ export default function A({ handleNavRight, className, to, label, fat = false })
         <NavLink
             onClick={handleNavRight}
             className={({ isActive }) => {
-                console.log(isActive, label)
                 return `p-4 font-bold inline-block hover:text-[#f67e7f] duration-300  
             ${(!isActive) ? 'text-white' : ''} 
             ${(isActive && !fat) ? 'text-[#f67e7f]' : 'text-black'} 
