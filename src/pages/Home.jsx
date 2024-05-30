@@ -1,4 +1,3 @@
-import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import Ready from "../components/Ready";
 import Section1 from "../components/Section1";
