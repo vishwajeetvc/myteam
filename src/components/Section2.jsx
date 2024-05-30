@@ -1,8 +1,8 @@
 
-import img3 from '../assets/bg-pattern-home-4-about-3.svg'
-import img4 from '../assets/bg-pattern-home-5.svg'
+import img3 from '../assets/bg-pattern-home-4-about-3.png'
+import img4 from '../assets/bg-pattern-home-5.png'
 
-import imgq from '../assets/icon-quotes.svg'
+import imgq from '../assets/icon-quotes.png'
 function Card({ para, name, place, img, className }) {
     return (<div
         style={{
