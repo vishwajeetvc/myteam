@@ -1,5 +1,5 @@
-import img from '../assets/bg-pattern-home-2.svg'
-import img2 from '../assets/bg-pattern-home-1.svg'
+import img from '../assets/bg-pattern-home-2.png'
+import img2 from '../assets/bg-pattern-home-1.png'
 export default function Hero() {
     return (
         <div

@@ -1,5 +1,5 @@
 
-import img from '../assets/bg-pattern-home-6-about-5.svg'
+import img from '../assets/bg-pattern-home-6-about-5.png'
 import A from '../components/A'
 export default function Ready() {
     return (<div

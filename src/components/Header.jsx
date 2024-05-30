@@ -1,5 +1,5 @@
 import { useState } from "react";
-import img from '../assets/bg-pattern-about-1-mobile-nav-1.svg'
+import img from '../assets/bg-pattern-about-1-mobile-nav-1.png'
 import A from "./A";
 
 export default function Header() {

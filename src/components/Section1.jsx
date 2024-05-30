@@ -1,7 +1,7 @@
-import img from '../assets/393512.svg'
-import img2 from '../assets/015c88.svg'
-import img3 from '../assets/3671c4.svg'
-import img4 from '../assets/bg-pattern-home-3.svg'
+import img from '../assets/393512.png'
+import img2 from '../assets/015c88.png'
+import img3 from '../assets/3671c4.png'
+import img4 from '../assets/bg-pattern-home-3.png'
 
 
 function Specs({ img, heading, para }) {

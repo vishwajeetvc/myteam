@@ -1,5 +1,5 @@
 
-import img from '../assets/bg-pattern-about-1-mobile-nav-1.svg'
+import img from '../assets/bg-pattern-about-1-mobile-nav-1.png'
 
 export default function SectionAbout() {
     return (<div

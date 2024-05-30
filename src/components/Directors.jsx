@@ -1,7 +1,7 @@
 
 
-import img from '../assets/bg-pattern-about-2-contact-1.svg'
-import img2 from '../assets/bg-pattern-home-4-about-3.svg'
+import img from '../assets/bg-pattern-about-2-contact-1.png'
+import img2 from '../assets/bg-pattern-home-4-about-3.png'
 
 
 
